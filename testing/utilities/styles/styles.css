@@ -1,0 +1,220 @@
+#main_grid {
+	display: grid;
+	/* grid-template-columns: 8.8fr 53.125fr 4fr; */
+	/* grid-template-columns: 1fr 5fr 1f; */
+	/* grid-template-areas: */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board dead' */
+		/* 'pool pool board board board board board board button'; */
+	/* grid-gap: 10px; */
+	width: 30%;
+	margin: 2% 0 0 20%;
+}
+
+#game_board {
+	/* grid-area: board; */
+	background-color: darkgreen;
+	/* width: 20%; */
+	/* max-width: 300px; */
+	display: inline-grid;
+	/* grid-template-columns: 20fr 5fr; */
+	padding: 2% 1% 2% 2%;
+}
+
+#piece_board {
+	/* grid-area: pool; */
+	background-color: darkgreen;
+	padding-left: 1% 1% 1% 1%;
+	/* width: 7%; */
+	/* max-width: 260px; */
+	/* margin-top: 1%; */
+	/* margin-left: 2%; */
+	/* padding: 0%; */
+	
+	display: inline-grid;
+	grid-template-columns: auto;
+}
+
+#arrowGrid {
+	display: grid;
+	grid-template-columns: auto;
+	padding: 11% 0;
+	/* background-color: yellow; */
+	
+}
+.arrow_grid {
+	/* padding: 5% 0 0 0; */
+}
+.arrow_grid:nth-child(odd) {
+	/* background-color: pink; */
+}
+.ag {
+	background-color: #C19A6B;
+	/* background-color: brown; */
+	margin-left: 15%;
+}
+.ag:nth-child(odd) {
+	/* background-color: cyan; */
+}
+
+#bigDiv0 {
+	/* margin: 0 0 0 0; */
+}
+#smallDiv0 {
+	/* margin: 0 0 0 0; */
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #C19A6B;
+	
+	/*overflow: hidden;*/
+}
+
+#box {
+	background-color: #990000; 
+	position: absolute; 
+	width: 2%;
+	/* height: 1%; */
+	
+	border-radius: 100%;
+	
+	display: none;
+}
+
+#answerBox {
+	border-width: 0 0 2px 2px;
+	border-style: solid;
+	/* margin: 5% 0 0 0; */
+}
+
+#arrow {
+	/* position: static; */
+	/* left: 40%; */
+    /* border-left: 20px solid red;  */
+    /* border-top: 20px solid red; */
+    /* height: 6%; */
+    /* width: 3%; */
+    /* transform: rotate(-45deg); */
+	/* display: inline-block; */
+	/* grid-area: button; */
+	/* background: url(utilities/script.js); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	font-size: 400%;
+	color: red;
+}
+
+#guessButton {
+	/* grid-area: button; */
+	/* position: absolute; */
+	/* left: 53%; */
+	display: inline-block;
+	/* /font-size: 320%; */
+	/* height: 100px; */
+	/* color: lightgrey; */
+	/* background-color: red; */
+	width: 77%;
+	margin: 14% 4% 0 4%;
+	background: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	/* height: 100%; */
+	/* padding-top: 100%; */
+}
+#guessButton:hover {
+	background: url(../img/arrowHover.png);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#blankZone {
+	display: inline-block;
+	border-width: 0 0 2px 2px;
+	border-style: solid;
+	/* margin: 20% 0 0 0 ; */
+}
+
+.gbDiv {
+	/* font-size: 320%; */
+	padding-top: 100%;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.big_container {
+	display: grid;
+	/* grid-template-columns: auto auto auto auto auto auto auto auto auto auto; */
+	
+	border-width: 0 0 1px 2px;
+	border-style: solid;
+}
+
+.big_piece {
+	margin: 7%;
+	/* animation-name: geir; */
+	/* animation-duration:2s; */
+	/* animation-iteration-count:infinite; */
+	/* animation-direction:alternate; */
+}
+
+/* @keyframes geir { */
+	/* from {background-color:pink; transform:scale(1,1); transform:rotateX(0deg); transform:rotateY(0deg);} */
+	/* to {background-color:yellow; transform:scale(10,10); transform:rotateX(180deg); transform:rotateY(180deg);} */
+/* } */
+
+.game_piece {
+	display: inline-block;
+	
+	background-color: darkgreen;
+	padding: 20% 20%;
+	
+	border: 2px solid black;
+	border-radius: 100%;
+}
+
+.pool_piece {
+	border-radius: 100%;
+}
+
+.small_container {
+	display: grid;
+	/* grid-template-columns: auto auto auto auto auto; */
+	
+	border-width: 0 2px 1px 2px;
+	border-style: solid;
+}
+
+.small_piece {
+	margin: 10%;
+	padding: 10%;
+}
+
+.inner_ring {
+	background-color: black;
+	border-radius: 100%;
+}
+
+.circle {
+	padding-top: 100%;
+}

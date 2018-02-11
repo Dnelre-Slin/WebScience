@@ -1,0 +1,96 @@
+input , textarea{
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.wMsg {
+	color: red;
+	font-size: 12px;
+}
+
+h1 {
+	padding-left: 10px;
+	background-color: green;
+	color: white;
+}
+
+h2 {
+	color: green;
+	font-size: 25px;
+}
+
+h3 {
+	color: green;
+	display: inline;
+	margin-right: 97px;
+	font-size: 17px;
+}
+
+#loginHeadings {
+	margin-left: 7px;
+}
+
+#sButton  {
+	background-color: green;
+	color: white;
+	border: 0;
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+}
+
+#lButton {
+	background-color: green;
+	color: white;
+	border: 0;
+	width: 80px;
+	height: 23px;
+	font-size: 15px;
+}
+
+#iLogoutButton {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	
+	background-color: red;
+	color: black;
+	border-color: green;
+}
+
+.loginDiv {
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+#pUsername, #pEmail, #pPswd1, #pPswd2 {
+	display: inline;
+	font-size: 12px;
+}
+
+#extraInfo {
+	border: solid 1px black;
+	background-color: #EEEEEE;
+	width: 300px;
+	height: 200px;
+	padding: 10px;
+	display: inline-block;
+    float: left;
+}
+
+#iUserID::placeholder, #iPswd::placeholder {
+	color: white;
+	background-color:red;
+	padding-left: 25px;
+}
+
+#allUsersBox {	
+	width: 100px;
+    height: 100px;
+    background-color: yellow;
+	display: inline-block;
+    float: left;
+    margin: 16px 5px;
+    padding: 5px;
+    border: 1px solid #000;
+}

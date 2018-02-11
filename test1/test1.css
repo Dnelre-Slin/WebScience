@@ -1,0 +1,10 @@
+.successText {
+	padding-left: 10px;
+	color: blue;
+	font-size: 30px;
+}
+.errorText {
+	padding-left: 10px;
+	color: red;
+	font-size: 30px;
+}
